@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SampleApp</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="headline">
+            <a href="#">AIC</a>
+        </h1>
+        <ul class="nav_list">
+            <li class="nav_list_item nav_list_item_0">
+                <a href="#"><i class="fas fa-clipboard"></i></i> Challenge</a>
+            </li>
+            <li class="nav_list_item">
+                <a href="#"><i class="fas fa-trophy"></i> Ranking</a>
+            </li>
+            <li class="nav_list_item">
+                <a href="#"><i class="fas fa-user-cog"></i> Setting</a>
+            </li>
+        </ul>
+        <div class="signin_container">
+            <a href="#"></span><i class="fas fa-sign-in-alt"></i> SignIn</a>
+        </div>
+    </header>
+    <div class="empty"></div>
+    <div class="main">
+        <div class ="main_container">
+            <div class="container_news">
+                <div class="title title_news">
+                    <h2>News</h2>
+                </div>
+                <div class="card card_news">
+                    <div class="container_news_item news_0">
+                        <h3>パッケージ不足に関するお詫び</h3>
+                        <hr>
+                        <p>この度、Too2第4問 「9. 画像処理の基礎4」、Too2 第2問 「7. 画像処理の基礎4」及び、Too1 第4問 「4. 画像データの取り扱い1」において、メンテナンスの際に、パッケージの追加漏れが発生していました。これの解決のため、以下の対応を行いました。</p>
+                    </div>
+                    <div class="container_news_item news_1">
+                        <h3>【重要】春学期コンテストのランキング上位の賞品に関して</h3>
+                        <hr>
+                        <p>現在、コロナウイルスの影響でキャンパス立ち入りが制限されており、その状況での賞品の受け渡しや表彰式の運営方法を検討しています。ユーザーの皆様には連絡が遅れておりますこと、お詫び申し上げます。</p>
+                    </div>
+                    <div class="container_news_item news_2">
+                        <h3>春学期コンテストが全問公開されました！</h3>
+                        <hr>
+                        <p>Webで簡単プログラミングチャレンジ2020年度春学期のランキング集計が終了しました！ランキング上位に入賞した方には、慶應大学の試験後にメールを送信いたします。</p>
+                    </div>
+                    <div class="container_news_item news_2">
+                        <h3>Webで簡単プログラミングチャレンジでできること</h3>
+                        <hr>
+                        <p>毎日更新されるPythonや機械学習に関する問題を継続的に解いて、自分のスキルを磨きましょう！また、AICが設置するPython講座の復習ももちろん歓迎です！さらに、毎日更新の問題はもちろん、企業の方と提携したコンテストを開催する計画もあるのでご期待ください！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container_null"></div>
+            <div class="container_challenge">
+                <%= yield %>
+            </div>
+        </div>
+    </div>
+    <div class="empty"></div>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_container_0">
+                <a href="https://twitter.com/keioaic?ref_src=twsrc%5Etfw" class="twitter_follow_button" data-show-count="false"><i class="fab fa-twitter"></i>  Follow @keioaic</a>
+            </div>
+            <div class="footer_container_1">
+                <a href=""><i class="fab fa-lg fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-lg fa-twitter"></i></a>
+                <a href=""><i class="fab fa-lg fa-instagram"></i></a>
+                <a href=""><i class="fab fa-lg fa-line"></i></a>
+                <a href=""><i class="fas fa-link"></i></a>
+            </div>
+            <div class="footer_container_2">
+                <h5>© Keio University. All rights reserved.</h5>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
