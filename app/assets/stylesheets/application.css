@@ -178,6 +178,8 @@ footer{
 }
 
 .title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     line-height: 44px;
     width: 100%;
     margin-left: 25px;
