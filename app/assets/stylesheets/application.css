@@ -41,20 +41,21 @@ header{
 .nav_list_item a{
     text-decoration: none;
     color: #666666;
+    transition: 0.5s
 }
 
-.nav_list_item_0  a{
+.selected a{
     color: #ff5151;
 }
 
 .nav_list_item a:hover{
-    color: #ff5151;
-    transition: 0.5s;
+    color: #ff5151;;
 }
 
 .signin_container{
     width: 10%;
     text-align: right;
+    transition: 0.5s;
 }
 
 .signin_container a{
@@ -64,13 +65,11 @@ header{
     color: #666666;
     font-size: 18px;
     font-weight: 700;
-    font-size: larger;
     line-height: 50px;
 }
 
 .signin_container a:hover{
     color: #ff5151;
-    transition: 0.5s;
 }
 
 footer{
@@ -153,7 +152,7 @@ footer{
 
 /* main */
 .empty{
-    height: 50px;
+    height: 45px;
     background-color: #f2f2f2;
 }
 
@@ -169,6 +168,7 @@ footer{
 	height: 100%;
 	display: flex;
 }
+
 
 .card{
     background-color: #fff;
@@ -469,4 +469,12 @@ footer{
     font-family: 'Roboto', sans-serif;
     margin-top: 2px;
     color: #999999;
+}
+
+
+.under_construction h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #666666;
 }

@@ -19,18 +19,26 @@
             <a href="#">AIC</a>
         </h1>
         <ul class="nav_list">
-            <li class="nav_list_item nav_list_item_0">
-                <a href="#"><i class="fas fa-clipboard"></i></i> Challenge</a>
+            <li class="nav_list_item <%= @menu0 %>">
+                <%= link_to '/' do %>
+                    <i class="fas fa-clipboard"></i> Challenge
+                <% end %>
             </li>
-            <li class="nav_list_item">
-                <a href="#"><i class="fas fa-trophy"></i> Ranking</a>
+            <li class="nav_list_item <%= @menu1 %>">
+                <%= link_to '/ranking' do %>
+                    <i class="fas fa-trophy"></i> Ranking
+                <% end %>
             </li>
-            <li class="nav_list_item">
-                <a href="#"><i class="fas fa-user-cog"></i> Setting</a>
+            <li class="nav_list_item <%= @menu2 %>">
+                <%= link_to '/setting' do %>
+                    <i class="fas fa-user-cog"></i> Setting
+                <% end %>
             </li>
         </ul>
         <div class="signin_container">
-            <a href="#"></span><i class="fas fa-sign-in-alt"></i> SignIn</a>
+            <%= link_to '/signin' do %>
+                <i class="fas fa-sign-in-alt"></i> SignIn
+            <% end %>
         </div>
     </header>
     <div class="empty"></div>
