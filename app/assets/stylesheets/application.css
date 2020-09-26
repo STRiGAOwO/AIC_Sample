@@ -1,15 +1,470 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+*{
+    margin:0; padding: 0;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    padding: 15px 0;
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.headline{
+    line-height: 50px;
+    font-size: 50px;
+    margin-left: 50px;
+    width: 10%;
+}
+
+.headline a{
+    text-decoration: none;
+    color: #ff5151;
+}
+
+.nav_list {
+    line-height: 50px;
+    width: 80%;
+    list-style: none;
+}
+
+.nav_list_item{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.nav_list_item a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.nav_list_item_0  a{
+    color: #ff5151;
+}
+
+.nav_list_item a:hover{
+    color: #ff5151;
+    transition: 0.5s;
+}
+
+.signin_container{
+    width: 10%;
+    text-align: right;
+}
+
+.signin_container a{
+    font-family: 'Roboto', sans-serif;
+    padding-right: 30px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 18px;
+    font-weight: 700;
+    font-size: larger;
+    line-height: 50px;
+}
+
+.signin_container a:hover{
+    color: #ff5151;
+    transition: 0.5s;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color:white;
+}
+
+.footer_container{
+    padding: 10px;
+    display: flex;
+    
+}
+
+.footer_container_0{
+    width: 25%;
+}
+
+.footer_container_1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_container_1 a{
+    line-height: 30px;
+    font-size: 18px;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.footer_container_2{
+    width: 25%;
+    text-align: right;
+}
+
+.footer_container_2 h5{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    line-height: 20px;
+}
+
+.twitter_follow_button{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 30px;
+    padding: 5px 10px;
+    background-color: #1DA1F2;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 1px 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.fa-facebook-square:hover{
+    color: #1877f2;
+    transition: 0.7s;
+}
+
+.fa-twitter:hover{
+    color: #1DA1F2;
+    transition: 0.7s;
+}
+
+.fa-instagram:hover{
+    color: #D93177;
+    transition: 0.7s;
+}
+
+.fa-line:hover{
+    color: #00b900;
+    transition: 0.7s;
+}
+
+
+
+
+
+
+/* main */
+.empty{
+    height: 50px;
+    background-color: #f2f2f2;
+}
+
+
+.main{
+    height: 750px;
+    width: 100%;
+    background-color:#f2f2f2;
+}
+
+.main_container {
+	margin: 0px 50px;
+	height: 100%;
+	display: flex;
+}
+
+.card{
+    background-color: #fff;
+    height: 700px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 2px 2px 2px 1px rgba(0,0,0,0.2);
+}
+
+.title{
+    line-height: 44px;
+    width: 100%;
+    margin-left: 25px;
+    background-color: #f2f2f2;
+}
+
+.title h2{
+    font-size: 44px;
+    color: #4d4d4d;
+    padding-bottom: 10px;
+}
+
+.card_news{
+    padding: 0 25px;
+    display:flex;
+    overflow-x:auto;
+    flex-direction: column;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card_news::-webkit-scrollbar{
+    display: none;
+}
+
+
+/**/
+.container_news{
+    width: 30%;
+}
+
+.container_news_item{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.container_news_item h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #707070;
+}
+
+.container_news_item p{
+    margin-top: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    padding: 0 5px;
+}
+
+.container_null{
+    width: 5%;
+    height: 100%;
+}
+
+.container_challenge{
+    width: 65%;
+}
+
+/**/
+
+.card_challenge{
+    padding: 0 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.container_challenge_subtitle{
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.container_challenge_subtitle h2{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: #707070;
+    position: relative;
+}
+
+.container_challenge_subtitle a{
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+    line-height: 100%;
+    position: absolute;
+    right: 0;
+	bottom: 5px;
+}
+
+.container_challenge_item{
+    height: 180px;
+    width: 1000px;
+    display: flex;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 2px 2px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.container_challenge_item_0{
+    margin-bottom: 20px;
+}
+
+.challenge_info{
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+    position: relative;
+    
+    background: #eb63a7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #eb63a7 0%, #eb6363 46%, #eba763 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 1;
+}
+
+.challenge_info:hover{
+    opacity: 0.6;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in
+}
+
+.challenge_info h5{
+    font-size: 12px;
+    padding: 25px 0 10px 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.challenge_info h3{
+    font-size: 24px;
+    padding: 0px 25px 25px 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.challenge_info h6{
+    display: block;
+    cursor: pointer;
+    top: 150px;
+    left: 140px;
+    position: absolute;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.challenge_info a{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.challenge_list{
+    width: 70%;
+    border-radius: 0 10px 10px 0;
+    background-color: #f2f2f2;
+}
+
+.challenge_list_container{
+    padding: 20px;
+    display: flex;
+    height: 140px;
+}
+
+.challenge_list_container_0{
+    display: flex;
+    width: 47%;
+    flex-direction: column;
+}
+
+.challenge_list_container_null{
+    width: 6%;
+}
+
+.challenge_contents{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 2px 2px 2px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.challenge_contents:hover{
+    transform: scale(1.05,1.05);
+}
+
+.challenge_contents a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.challenge_contents_num{
+    width: 15%;
+    border-radius: 10px 0 0 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #eb63a7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #eb63a7 0%, #eb6363 46%, #eba763 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    opacity: 1;
+}
+
+.challenge_contents_num h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.challenge_contents_problem{
+    width: 85%;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    color: #333333;
+}
+
+.challenge_contents_problem h3{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.container_challenge_end{
+    width: 1000px;
+    height: 75px;display: flex;
+}
+
+.challenge_end_item{
+    width: 250px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px -1px rgba(0,0,0,0.2), 2px 2px 6px 2px rgba(0,0,0,0.2);
+    margin-right: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.challenge_end_item:hover{
+    transform: scale(1.05,1.05);
+}
+
+.challenge_end_item a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.challenge_end_deco{
+    width: 30%;
+}
+
+.challenge_end_box{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 17px;
+
+    background: #eb63a7; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #eb63a7 0%, #eb6363 46%, #eba763 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #eb63a7 0%,#eb6363 46%,#eba763 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.challenge_end_text{
+    width: 70%;
+    margin-top: 15px;
+}
+
+.challenge_end_text h4{
+    font-size: 18px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.challenge_end_text h5{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2px;
+    color: #999999;
+}
