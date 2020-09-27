@@ -127,22 +127,22 @@ footer{
 
 .fa-facebook-square:hover{
     color: #1877f2;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .fa-twitter:hover{
     color: #1DA1F2;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .fa-instagram:hover{
     color: #D93177;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .fa-line:hover{
     color: #00b900;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 
