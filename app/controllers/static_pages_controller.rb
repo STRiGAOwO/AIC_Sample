@@ -1,25 +1,21 @@
 class StaticPagesController < ApplicationController
   def home
-    @menu0 = "selected"
-    @menu1 = "unselected"
-    @menu2 = "unselected"
+    @title = "Challenge"
+    @menu = ["selected", "unselected", "unselected"]
   end
 
   def ranking
-    @menu0 = "unselected"
-    @menu1 = "selected"
-    @menu2 = "unselected"
+    @title = "Ranking"
+    @menu = ["unselected", "selected", "unselected"]
   end
   
   def setting
-    @menu0 = "unselected"
-    @menu1 = "unselected"
-    @menu2 = "selected"
+    @title = "Setting"
+    @menu = ["selected", "unselected", "selected"]
   end
   
   def signin
-    @menu0 = "unselected"
-    @menu1 = "unselected"
-    @menu2 = "unselected"
+    @title = "Sign In"
+    @menu = ["unselected", "unselected", "unselected"]
   end
 end
